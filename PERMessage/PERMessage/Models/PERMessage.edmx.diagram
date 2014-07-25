@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="834fb8b93d04496283cfa7647f0a0aaa" Name="Diagram1">
+        <EntityTypeShape EntityType="PERMessageModel.per_Borrow" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PERMessageModel.per_Box" Width="1.5" PointX="8.25" PointY="34.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PERMessageModel.per_Data" Width="1.5" PointX="8.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="PERMessageModel.per_InfoData" Width="1.5" PointX="6" PointY="27.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PERMessageModel.per_Log" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PERMessageModel.per_PicSave" Width="1.5" PointX="8.25" PointY="37.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PERMessageModel.per_RightCode" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PERMessageModel.per_Role" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PERMessageModel.per_RoleRight" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="PERMessageModel.per_User" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PERMessageModel.sysdiagrams" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="PERMessageModel.FK_per_Borrow_per_Data1" ManuallyRouted="false" />
+        <AssociationConnector Association="PERMessageModel.FK_per_Borrow_per_User" ManuallyRouted="false" />
+        <AssociationConnector Association="PERMessageModel.FK_per_Box_per_InfoData" ManuallyRouted="false" />
+        <AssociationConnector Association="PERMessageModel.FK_per_Data_per_InfoData" ManuallyRouted="false" />
+        <AssociationConnector Association="PERMessageModel.FK_per_Data_per_User" ManuallyRouted="false" />
+        <AssociationConnector Association="PERMessageModel.FK_per_PicSave_per_InfoData" ManuallyRouted="false" />
+        <AssociationConnector Association="PERMessageModel.FK_per_RoleRight_per_RightCode" ManuallyRouted="false" />
+        <AssociationConnector Association="PERMessageModel.FK_per_Admin_per_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="PERMessageModel.FK_per_RoleRight_per_Role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

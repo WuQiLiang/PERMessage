@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PERMessageModelStoreContainer" CdmEntityContainer="PERMessageEntities">
+    <EntitySetMapping Name="per_Borrow">
+      <EntityTypeMapping TypeName="PERMessageModel.per_Borrow">
+        <MappingFragment StoreEntitySet="per_Borrow">
+          <ScalarProperty Name="per_Borrow_ID" ColumnName="per_Borrow_ID" />
+          <ScalarProperty Name="per_ID" ColumnName="per_ID" />
+          <ScalarProperty Name="per_UserID" ColumnName="per_UserID" />
+          <ScalarProperty Name="per_Borrow_state" ColumnName="per_Borrow_state" />
+          <ScalarProperty Name="per_Borrow_date" ColumnName="per_Borrow_date" />
+          <ScalarProperty Name="per_Return_date" ColumnName="per_Return_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="per_Box">
+      <EntityTypeMapping TypeName="PERMessageModel.per_Box">
+        <MappingFragment StoreEntitySet="per_Box">
+          <ScalarProperty Name="per_BoxID" ColumnName="per_BoxID" />
+          <ScalarProperty Name="per_Box_Uniquce_ide" ColumnName="per_Box_Uniquce_ide" />
+          <ScalarProperty Name="per_P_ID" ColumnName="per_P_ID" />
+          <ScalarProperty Name="per_ArchivesID" ColumnName="per_ArchivesID" />
+          <ScalarProperty Name="per_Res_people" ColumnName="per_Res_people" />
+          <ScalarProperty Name="per_description" ColumnName="per_description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="per_Data">
+      <EntityTypeMapping TypeName="PERMessageModel.per_Data">
+        <MappingFragment StoreEntitySet="per_Data">
+          <ScalarProperty Name="per_ID" ColumnName="per_ID" />
+          <ScalarProperty Name="per_P_ID" ColumnName="per_P_ID" />
+          <ScalarProperty Name="per_UserID" ColumnName="per_UserID" />
+          <ScalarProperty Name="per_Cancel_state" ColumnName="per_Cancel_state" />
+          <ScalarProperty Name="per_Approve_state" ColumnName="per_Approve_state" />
+          <ScalarProperty Name="per_Unapprove_cause" ColumnName="per_Unapprove_cause" />
+          <ScalarProperty Name="per_Delete_cause" ColumnName="per_Delete_cause" />
+          <ScalarProperty Name="per_Delete_date" ColumnName="per_Delete_date" />
+          <ScalarProperty Name="per_Borrow_count" ColumnName="per_Borrow_count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="per_InfoData">
+      <EntityTypeMapping TypeName="PERMessageModel.per_InfoData">
+        <MappingFragment StoreEntitySet="per_InfoData">
+          <ScalarProperty Name="per_P_ID" ColumnName="per_P_ID" />
+          <ScalarProperty Name="per_ArchivesID" ColumnName="per_ArchivesID" />
+          <ScalarProperty Name="per_Archival_cat_code" ColumnName="per_Archival_cat_code" />
+          <ScalarProperty Name="per_AggregationLevel" ColumnName="per_AggregationLevel" />
+          <ScalarProperty Name="per_Uniquce_ide" ColumnName="per_Uniquce_ide" />
+          <ScalarProperty Name="per_Archival_code" ColumnName="per_Archival_code" />
+          <ScalarProperty Name="per_Title" ColumnName="per_Title" />
+          <ScalarProperty Name="per_Cameraman" ColumnName="per_Cameraman" />
+          <ScalarProperty Name="per_DescriptedBy" ColumnName="per_DescriptedBy" />
+          <ScalarProperty Name="per_Digitization_aut" ColumnName="per_Digitization_aut" />
+          <ScalarProperty Name="per_CreationDate" ColumnName="per_CreationDate" />
+          <ScalarProperty Name="per_DigitizationDate" ColumnName="per_DigitizationDate" />
+          <ScalarProperty Name="per_ModifiedDate" ColumnName="per_ModifiedDate" />
+          <ScalarProperty Name="per_Place" ColumnName="per_Place" />
+          <ScalarProperty Name="per_People" ColumnName="per_People" />
+          <ScalarProperty Name="per_Background" ColumnName="per_Background" />
+          <ScalarProperty Name="per_GPS_version" ColumnName="per_GPS_version" />
+          <ScalarProperty Name="per_GPS_latitude_ref" ColumnName="per_GPS_latitude_ref" />
+          <ScalarProperty Name="per_Latitude" ColumnName="per_Latitude" />
+          <ScalarProperty Name="per_GPS_Lon_ref" ColumnName="per_GPS_Lon_ref" />
+          <ScalarProperty Name="per_Longitude" ColumnName="per_Longitude" />
+          <ScalarProperty Name="per_Altitude_ref" ColumnName="per_Altitude_ref" />
+          <ScalarProperty Name="per_Altitude" ColumnName="per_Altitude" />
+          <ScalarProperty Name="per_Img_dir_ref" ColumnName="per_Img_dir_ref" />
+          <ScalarProperty Name="per_Img_dir" ColumnName="per_Img_dir" />
+          <ScalarProperty Name="per_Acquisition_app" ColumnName="per_Acquisition_app" />
+          <ScalarProperty Name="per_ProvenanceName" ColumnName="per_ProvenanceName" />
+          <ScalarProperty Name="per_Source_Ide" ColumnName="per_Source_Ide" />
+          <ScalarProperty Name="per_Retention_per" ColumnName="per_Retention_per" />
+          <ScalarProperty Name="per_Security_cla" ColumnName="per_Security_cla" />
+          <ScalarProperty Name="per_Control_ide" ColumnName="per_Control_ide" />
+          <ScalarProperty Name="per_Copyright_inf" ColumnName="per_Copyright_inf" />
+          <ScalarProperty Name="per_Annotation" ColumnName="per_Annotation" />
+          <ScalarProperty Name="per_Online_loc" ColumnName="per_Online_loc" />
+          <ScalarProperty Name="per_Offline_loc" ColumnName="per_Offline_loc" />
+          <ScalarProperty Name="per_CreationWay" ColumnName="per_CreationWay" />
+          <ScalarProperty Name="per_Device_man" ColumnName="per_Device_man" />
+          <ScalarProperty Name="per_Device_mod_num" ColumnName="per_Device_mod_num" />
+          <ScalarProperty Name="per_Device_sen" ColumnName="per_Device_sen" />
+          <ScalarProperty Name="per_Software" ColumnName="per_Software" />
+          <ScalarProperty Name="per_Manage_sys_des" ColumnName="per_Manage_sys_des" />
+          <ScalarProperty Name="per_Computer_fil_name" ColumnName="per_Computer_fil_name" />
+          <ScalarProperty Name="per_Computer_fil_size" ColumnName="per_Computer_fil_size" />
+          <ScalarProperty Name="per_FormatName" ColumnName="per_FormatName" />
+          <ScalarProperty Name="per_FormatVersion" ColumnName="per_FormatVersion" />
+          <ScalarProperty Name="per_Format_des" ColumnName="per_Format_des" />
+          <ScalarProperty Name="per_X_resolution" ColumnName="per_X_resolution" />
+          <ScalarProperty Name="per_Y_resolution" ColumnName="per_Y_resolution" />
+          <ScalarProperty Name="per_Image_Height" ColumnName="per_Image_Height" />
+          <ScalarProperty Name="per_Image_Width" ColumnName="per_Image_Width" />
+          <ScalarProperty Name="per_Color_Space" ColumnName="per_Color_Space" />
+          <ScalarProperty Name="per_YCbCr" ColumnName="per_YCbCr" />
+          <ScalarProperty Name="per_Samples_per_pix" ColumnName="per_Samples_per_pix" />
+          <ScalarProperty Name="per_Bits_per_sample" ColumnName="per_Bits_per_sample" />
+          <ScalarProperty Name="per_Image_com_sch" ColumnName="per_Image_com_sch" />
+          <ScalarProperty Name="per_Image_com_rat" ColumnName="per_Image_com_rat" />
+          <ScalarProperty Name="per_ByteOrder" ColumnName="per_ByteOrder" />
+          <ScalarProperty Name="per_ExifVersion" ColumnName="per_ExifVersion" />
+          <ScalarProperty Name="per_Related_rec_ID" ColumnName="per_Related_rec_ID" />
+          <ScalarProperty Name="per_Sig_for_dis" ColumnName="per_Sig_for_dis" />
+          <ScalarProperty Name="per_SignatureDate" ColumnName="per_SignatureDate" />
+          <ScalarProperty Name="per_Signer" ColumnName="per_Signer" />
+          <ScalarProperty Name="per_signature" ColumnName="per_signature" />
+          <ScalarProperty Name="per_Certificate" ColumnName="per_Certificate" />
+          <ScalarProperty Name="per_Certificate_ref" ColumnName="per_Certificate_ref" />
+          <ScalarProperty Name="per_Signature_alg" ColumnName="per_Signature_alg" />
+          <ScalarProperty Name="per_BusinessType" ColumnName="per_BusinessType" />
+          <ScalarProperty Name="per_BusinessName" ColumnName="per_BusinessName" />
+          <ScalarProperty Name="per_Bus_beg_date" ColumnName="per_Bus_beg_date" />
+          <ScalarProperty Name="per_Bus_end_date" ColumnName="per_Bus_end_date" />
+          <ScalarProperty Name="per_Business_des" ColumnName="per_Business_des" />
+          <ScalarProperty Name="per_Action_ide" ColumnName="per_Action_ide" />
+          <ScalarProperty Name="per_Management_act" ColumnName="per_Management_act" />
+          <ScalarProperty Name="per_ActionTime" ColumnName="per_ActionTime" />
+          <ScalarProperty Name="per_Mana_act_des" ColumnName="per_Mana_act_des" />
+          <ScalarProperty Name="per_AgentID" ColumnName="per_AgentID" />
+          <ScalarProperty Name="per_AgentName" ColumnName="per_AgentName" />
+          <ScalarProperty Name="per_AgentType" ColumnName="per_AgentType" />
+          <ScalarProperty Name="per_Agent_ide" ColumnName="per_Agent_ide" />
+          <ScalarProperty Name="per_Agent_bel_to" ColumnName="per_Agent_bel_to" />
+          <ScalarProperty Name="per_Mandate_ide" ColumnName="per_Mandate_ide" />
+          <ScalarProperty Name="per_MandateName" ColumnName="per_MandateName" />
+          <ScalarProperty Name="per_MandateType" ColumnName="per_MandateType" />
+          <ScalarProperty Name="per_IssueDate" ColumnName="per_IssueDate" />
+          <ScalarProperty Name="per_Related_ent_ide" ColumnName="per_Related_ent_ide" />
+          <ScalarProperty Name="per_Entities_rel_type" ColumnName="per_Entities_rel_type" />
+          <ScalarProperty Name="per_Entities_rel" ColumnName="per_Entities_rel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="per_Log">
+      <EntityTypeMapping TypeName="PERMessageModel.per_Log">
+        <MappingFragment StoreEntitySet="per_Log">
+          <ScalarProperty Name="per_LogID" ColumnName="per_LogID" />
+          <ScalarProperty Name="per_AdminID" ColumnName="per_AdminID" />
+          <ScalarProperty Name="per_AdminDate" ColumnName="per_AdminDate" />
+          <ScalarProperty Name="per_AdminDo" ColumnName="per_AdminDo" />
+          <ScalarProperty Name="per_DocumentID" ColumnName="per_DocumentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="per_PicSave">
+      <EntityTypeMapping TypeName="PERMessageModel.per_PicSave">
+        <MappingFragment StoreEntitySet="per_PicSave">
+          <ScalarProperty Name="per_PicID" ColumnName="per_PicID" />
+          <ScalarProperty Name="per_P_ID" ColumnName="per_P_ID" />
+          <ScalarProperty Name="per_Pic_Name" ColumnName="per_Pic_Name" />
+          <ScalarProperty Name="per_Pic_size" ColumnName="per_Pic_size" />
+          <ScalarProperty Name="per_Pic_content" ColumnName="per_Pic_content" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="per_RightCode">
+      <EntityTypeMapping TypeName="PERMessageModel.per_RightCode">
+        <MappingFragment StoreEntitySet="per_RightCode">
+          <ScalarProperty Name="RC_ID" ColumnName="RC_ID" />
+          <ScalarProperty Name="RC_ParentCode" ColumnName="RC_ParentCode" />
+          <ScalarProperty Name="RC_Text" ColumnName="RC_Text" />
+          <ScalarProperty Name="RC_Url" ColumnName="RC_Url" />
+          <ScalarProperty Name="RC_Tip" ColumnName="RC_Tip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="per_Role">
+      <EntityTypeMapping TypeName="PERMessageModel.per_Role">
+        <MappingFragment StoreEntitySet="per_Role">
+          <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+          <ScalarProperty Name="Role_Name" ColumnName="Role_Name" />
+          <ScalarProperty Name="Role_Desc" ColumnName="Role_Desc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="per_RoleRight">
+      <EntityTypeMapping TypeName="PERMessageModel.per_RoleRight">
+        <MappingFragment StoreEntitySet="per_RoleRight">
+          <ScalarProperty Name="UPR_ID" ColumnName="UPR_ID" />
+          <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+          <ScalarProperty Name="RC_ID" ColumnName="RC_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="per_User">
+      <EntityTypeMapping TypeName="PERMessageModel.per_User">
+        <MappingFragment StoreEntitySet="per_User">
+          <ScalarProperty Name="per_UserID" ColumnName="per_UserID" />
+          <ScalarProperty Name="per_UserName" ColumnName="per_UserName" />
+          <ScalarProperty Name="per_UserPas" ColumnName="per_UserPas" />
+          <ScalarProperty Name="per_User_RoleID" ColumnName="per_User_RoleID" />
+          <ScalarProperty Name="per_User_Flag" ColumnName="per_User_Flag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="PERMessageModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

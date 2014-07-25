@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PERMessageModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="per_Borrow">
+    <Key>
+      <PropertyRef Name="per_Borrow_ID" />
+    </Key>
+    <Property Name="per_Borrow_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="per_ID" Type="bigint" />
+    <Property Name="per_UserID" Type="bigint" />
+    <Property Name="per_Borrow_state" Type="int" />
+    <Property Name="per_Borrow_date" Type="datetime" />
+    <Property Name="per_Return_date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="per_Box">
+    <Key>
+      <PropertyRef Name="per_BoxID" />
+    </Key>
+    <Property Name="per_BoxID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="per_Box_Uniquce_ide" Type="varchar" MaxLength="500" />
+    <Property Name="per_P_ID" Type="bigint" />
+    <Property Name="per_ArchivesID" Type="varchar" MaxLength="500" />
+    <Property Name="per_Res_people" Type="varchar" MaxLength="500" />
+    <Property Name="per_description" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="per_Data">
+    <Key>
+      <PropertyRef Name="per_ID" />
+    </Key>
+    <Property Name="per_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="per_P_ID" Type="bigint" />
+    <Property Name="per_UserID" Type="bigint" />
+    <Property Name="per_Cancel_state" Type="int" />
+    <Property Name="per_Approve_state" Type="int" />
+    <Property Name="per_Unapprove_cause" Type="varchar(max)" />
+    <Property Name="per_Delete_cause" Type="varchar(max)" />
+    <Property Name="per_Delete_date" Type="datetime" />
+    <Property Name="per_Borrow_count" Type="bigint" />
+  </EntityType>
+  <EntityType Name="per_InfoData">
+    <Key>
+      <PropertyRef Name="per_P_ID" />
+    </Key>
+    <Property Name="per_P_ID" Type="bigint" Nullable="false" />
+    <Property Name="per_ArchivesID" Type="varchar" MaxLength="500" />
+    <Property Name="per_Archival_cat_code" Type="varchar" MaxLength="500" />
+    <Property Name="per_AggregationLevel" Type="varchar" MaxLength="500" />
+    <Property Name="per_Uniquce_ide" Type="varchar" MaxLength="500" />
+    <Property Name="per_Archival_code" Type="varchar" MaxLength="500" />
+    <Property Name="per_Title" Type="varchar" MaxLength="500" />
+    <Property Name="per_Cameraman" Type="varchar" MaxLength="500" />
+    <Property Name="per_DescriptedBy" Type="varchar" MaxLength="500" />
+    <Property Name="per_Digitization_aut" Type="varchar" MaxLength="500" />
+    <Property Name="per_CreationDate" Type="datetime" />
+    <Property Name="per_DigitizationDate" Type="datetime" />
+    <Property Name="per_ModifiedDate" Type="datetime" />
+    <Property Name="per_Place" Type="varchar" MaxLength="500" />
+    <Property Name="per_People" Type="varchar" MaxLength="500" />
+    <Property Name="per_Background" Type="varchar" MaxLength="500" />
+    <Property Name="per_GPS_version" Type="varchar" MaxLength="500" />
+    <Property Name="per_GPS_latitude_ref" Type="varchar" MaxLength="500" />
+    <Property Name="per_Latitude" Type="varchar" MaxLength="500" />
+    <Property Name="per_GPS_Lon_ref" Type="varchar" MaxLength="500" />
+    <Property Name="per_Longitude" Type="varchar" MaxLength="500" />
+    <Property Name="per_Altitude_ref" Type="varchar" MaxLength="500" />
+    <Property Name="per_Altitude" Type="varchar" MaxLength="500" />
+    <Property Name="per_Img_dir_ref" Type="varchar" MaxLength="500" />
+    <Property Name="per_Img_dir" Type="varchar" MaxLength="500" />
+    <Property Name="per_Acquisition_app" Type="varchar" MaxLength="500" />
+    <Property Name="per_ProvenanceName" Type="varchar" MaxLength="500" />
+    <Property Name="per_Source_Ide" Type="varchar" MaxLength="500" />
+    <Property Name="per_Retention_per" Type="varchar" MaxLength="500" />
+    <Property Name="per_Security_cla" Type="varchar" MaxLength="500" />
+    <Property Name="per_Control_ide" Type="varchar" MaxLength="500" />
+    <Property Name="per_Copyright_inf" Type="varchar" MaxLength="500" />
+    <Property Name="per_Annotation" Type="varchar" MaxLength="500" />
+    <Property Name="per_Online_loc" Type="varchar" MaxLength="500" />
+    <Property Name="per_Offline_loc" Type="varchar" MaxLength="500" />
+    <Property Name="per_CreationWay" Type="varchar" MaxLength="500" />
+    <Property Name="per_Device_man" Type="varchar" MaxLength="500" />
+    <Property Name="per_Device_mod_num" Type="varchar" MaxLength="500" />
+    <Property Name="per_Device_sen" Type="varchar" MaxLength="500" />
+    <Property Name="per_Software" Type="varchar" MaxLength="500" />
+    <Property Name="per_Manage_sys_des" Type="varchar" MaxLength="500" />
+    <Property Name="per_Computer_fil_name" Type="varchar" MaxLength="500" />
+    <Property Name="per_Computer_fil_size" Type="varchar" MaxLength="500" />
+    <Property Name="per_FormatName" Type="varchar" MaxLength="500" />
+    <Property Name="per_FormatVersion" Type="varchar" MaxLength="500" />
+    <Property Name="per_Format_des" Type="varchar" MaxLength="500" />
+    <Property Name="per_X_resolution" Type="varchar" MaxLength="500" />
+    <Property Name="per_Y_resolution" Type="varchar" MaxLength="500" />
+    <Property Name="per_Image_Height" Type="varchar" MaxLength="500" />
+    <Property Name="per_Image_Width" Type="varchar" MaxLength="500" />
+    <Property Name="per_Color_Space" Type="varchar" MaxLength="500" />
+    <Property Name="per_YCbCr" Type="varchar" MaxLength="500" />
+    <Property Name="per_Samples_per_pix" Type="varchar" MaxLength="500" />
+    <Property Name="per_Bits_per_sample" Type="varchar" MaxLength="500" />
+    <Property Name="per_Image_com_sch" Type="varchar" MaxLength="500" />
+    <Property Name="per_Image_com_rat" Type="varchar" MaxLength="500" />
+    <Property Name="per_ByteOrder" Type="varchar" MaxLength="500" />
+    <Property Name="per_ExifVersion" Type="varchar" MaxLength="500" />
+    <Property Name="per_Related_rec_ID" Type="varchar" MaxLength="500" />
+    <Property Name="per_Sig_for_dis" Type="varchar" MaxLength="500" />
+    <Property Name="per_SignatureDate" Type="datetime" />
+    <Property Name="per_Signer" Type="varchar" MaxLength="500" />
+    <Property Name="per_signature" Type="varchar" MaxLength="500" />
+    <Property Name="per_Certificate" Type="varchar" MaxLength="500" />
+    <Property Name="per_Certificate_ref" Type="varchar" MaxLength="500" />
+    <Property Name="per_Signature_alg" Type="varchar" MaxLength="500" />
+    <Property Name="per_BusinessType" Type="varchar" MaxLength="500" />
+    <Property Name="per_BusinessName" Type="varchar" MaxLength="500" />
+    <Property Name="per_Bus_beg_date" Type="datetime" />
+    <Property Name="per_Bus_end_date" Type="datetime" />
+    <Property Name="per_Business_des" Type="varchar" MaxLength="500" />
+    <Property Name="per_Action_ide" Type="varchar" MaxLength="500" />
+    <Property Name="per_Management_act" Type="varchar" MaxLength="500" />
+    <Property Name="per_ActionTime" Type="datetime" />
+    <Property Name="per_Mana_act_des" Type="varchar" MaxLength="500" />
+    <Property Name="per_AgentID" Type="varchar" MaxLength="500" />
+    <Property Name="per_AgentName" Type="varchar" MaxLength="500" />
+    <Property Name="per_AgentType" Type="varchar" MaxLength="500" />
+    <Property Name="per_Agent_ide" Type="varchar" MaxLength="500" />
+    <Property Name="per_Agent_bel_to" Type="varchar" MaxLength="500" />
+    <Property Name="per_Mandate_ide" Type="varchar" MaxLength="500" />
+    <Property Name="per_MandateName" Type="varchar" MaxLength="500" />
+    <Property Name="per_MandateType" Type="varchar" MaxLength="500" />
+    <Property Name="per_IssueDate" Type="datetime" />
+    <Property Name="per_Related_ent_ide" Type="varchar" MaxLength="500" />
+    <Property Name="per_Entities_rel_type" Type="varchar" MaxLength="500" />
+    <Property Name="per_Entities_rel" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="per_Log">
+    <Key>
+      <PropertyRef Name="per_LogID" />
+    </Key>
+    <Property Name="per_LogID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="per_AdminID" Type="bigint" />
+    <Property Name="per_AdminDate" Type="datetime" />
+    <Property Name="per_AdminDo" Type="varchar(max)" />
+    <Property Name="per_DocumentID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="per_PicSave">
+    <Key>
+      <PropertyRef Name="per_PicID" />
+    </Key>
+    <Property Name="per_PicID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="per_P_ID" Type="bigint" />
+    <Property Name="per_Pic_Name" Type="varchar" MaxLength="500" />
+    <Property Name="per_Pic_size" Type="varchar" MaxLength="500" />
+    <Property Name="per_Pic_content" Type="image" />
+  </EntityType>
+  <EntityType Name="per_RightCode">
+    <Key>
+      <PropertyRef Name="RC_ID" />
+    </Key>
+    <Property Name="RC_ID" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="RC_ParentCode" Type="varchar" MaxLength="500" />
+    <Property Name="RC_Text" Type="varchar(max)" />
+    <Property Name="RC_Url" Type="varchar(max)" />
+    <Property Name="RC_Tip" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="per_Role">
+    <Key>
+      <PropertyRef Name="Role_ID" />
+    </Key>
+    <Property Name="Role_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Role_Name" Type="varchar" MaxLength="500" />
+    <Property Name="Role_Desc" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="per_RoleRight">
+    <Key>
+      <PropertyRef Name="UPR_ID" />
+    </Key>
+    <Property Name="UPR_ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Role_ID" Type="bigint" />
+    <Property Name="RC_ID" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="per_User">
+    <Key>
+      <PropertyRef Name="per_UserID" />
+    </Key>
+    <Property Name="per_UserID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="per_UserName" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="per_UserPas" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="per_User_RoleID" Type="bigint" Nullable="false" />
+    <Property Name="per_User_Flag" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_per_Admin_per_Role">
+    <End Role="per_Role" Type="Self.per_Role" Multiplicity="1" />
+    <End Role="per_User" Type="Self.per_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="per_Role">
+        <PropertyRef Name="Role_ID" />
+      </Principal>
+      <Dependent Role="per_User">
+        <PropertyRef Name="per_User_RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_per_Borrow_per_Data1">
+    <End Role="per_Data" Type="Self.per_Data" Multiplicity="0..1" />
+    <End Role="per_Borrow" Type="Self.per_Borrow" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="per_Data">
+        <PropertyRef Name="per_ID" />
+      </Principal>
+      <Dependent Role="per_Borrow">
+        <PropertyRef Name="per_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_per_Borrow_per_User">
+    <End Role="per_User" Type="Self.per_User" Multiplicity="0..1" />
+    <End Role="per_Borrow" Type="Self.per_Borrow" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="per_User">
+        <PropertyRef Name="per_UserID" />
+      </Principal>
+      <Dependent Role="per_Borrow">
+        <PropertyRef Name="per_UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_per_Box_per_InfoData">
+    <End Role="per_InfoData" Type="Self.per_InfoData" Multiplicity="0..1" />
+    <End Role="per_Box" Type="Self.per_Box" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="per_InfoData">
+        <PropertyRef Name="per_P_ID" />
+      </Principal>
+      <Dependent Role="per_Box">
+        <PropertyRef Name="per_P_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_per_Data_per_InfoData">
+    <End Role="per_InfoData" Type="Self.per_InfoData" Multiplicity="0..1" />
+    <End Role="per_Data" Type="Self.per_Data" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="per_InfoData">
+        <PropertyRef Name="per_P_ID" />
+      </Principal>
+      <Dependent Role="per_Data">
+        <PropertyRef Name="per_P_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_per_Data_per_User">
+    <End Role="per_User" Type="Self.per_User" Multiplicity="0..1" />
+    <End Role="per_Data" Type="Self.per_Data" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="per_User">
+        <PropertyRef Name="per_UserID" />
+      </Principal>
+      <Dependent Role="per_Data">
+        <PropertyRef Name="per_UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_per_PicSave_per_InfoData">
+    <End Role="per_InfoData" Type="Self.per_InfoData" Multiplicity="0..1" />
+    <End Role="per_PicSave" Type="Self.per_PicSave" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="per_InfoData">
+        <PropertyRef Name="per_P_ID" />
+      </Principal>
+      <Dependent Role="per_PicSave">
+        <PropertyRef Name="per_P_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_per_RoleRight_per_RightCode">
+    <End Role="per_RightCode" Type="Self.per_RightCode" Multiplicity="0..1" />
+    <End Role="per_RoleRight" Type="Self.per_RoleRight" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="per_RightCode">
+        <PropertyRef Name="RC_ID" />
+      </Principal>
+      <Dependent Role="per_RoleRight">
+        <PropertyRef Name="RC_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_per_RoleRight_per_Role">
+    <End Role="per_Role" Type="Self.per_Role" Multiplicity="0..1" />
+    <End Role="per_RoleRight" Type="Self.per_RoleRight" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="per_Role">
+        <PropertyRef Name="Role_ID" />
+      </Principal>
+      <Dependent Role="per_RoleRight">
+        <PropertyRef Name="Role_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PERMessageModelStoreContainer">
+    <EntitySet Name="per_Borrow" EntityType="Self.per_Borrow" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="per_Box" EntityType="Self.per_Box" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="per_Data" EntityType="Self.per_Data" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="per_InfoData" EntityType="Self.per_InfoData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="per_Log" EntityType="Self.per_Log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="per_PicSave" EntityType="Self.per_PicSave" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="per_RightCode" EntityType="Self.per_RightCode" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="per_Role" EntityType="Self.per_Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="per_RoleRight" EntityType="Self.per_RoleRight" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="per_User" EntityType="Self.per_User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_per_Admin_per_Role" Association="Self.FK_per_Admin_per_Role">
+      <End Role="per_Role" EntitySet="per_Role" />
+      <End Role="per_User" EntitySet="per_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_per_Borrow_per_Data1" Association="Self.FK_per_Borrow_per_Data1">
+      <End Role="per_Data" EntitySet="per_Data" />
+      <End Role="per_Borrow" EntitySet="per_Borrow" />
+    </AssociationSet>
+    <AssociationSet Name="FK_per_Borrow_per_User" Association="Self.FK_per_Borrow_per_User">
+      <End Role="per_User" EntitySet="per_User" />
+      <End Role="per_Borrow" EntitySet="per_Borrow" />
+    </AssociationSet>
+    <AssociationSet Name="FK_per_Box_per_InfoData" Association="Self.FK_per_Box_per_InfoData">
+      <End Role="per_InfoData" EntitySet="per_InfoData" />
+      <End Role="per_Box" EntitySet="per_Box" />
+    </AssociationSet>
+    <AssociationSet Name="FK_per_Data_per_InfoData" Association="Self.FK_per_Data_per_InfoData">
+      <End Role="per_InfoData" EntitySet="per_InfoData" />
+      <End Role="per_Data" EntitySet="per_Data" />
+    </AssociationSet>
+    <AssociationSet Name="FK_per_Data_per_User" Association="Self.FK_per_Data_per_User">
+      <End Role="per_User" EntitySet="per_User" />
+      <End Role="per_Data" EntitySet="per_Data" />
+    </AssociationSet>
+    <AssociationSet Name="FK_per_PicSave_per_InfoData" Association="Self.FK_per_PicSave_per_InfoData">
+      <End Role="per_InfoData" EntitySet="per_InfoData" />
+      <End Role="per_PicSave" EntitySet="per_PicSave" />
+    </AssociationSet>
+    <AssociationSet Name="FK_per_RoleRight_per_RightCode" Association="Self.FK_per_RoleRight_per_RightCode">
+      <End Role="per_RightCode" EntitySet="per_RightCode" />
+      <End Role="per_RoleRight" EntitySet="per_RoleRight" />
+    </AssociationSet>
+    <AssociationSet Name="FK_per_RoleRight_per_Role" Association="Self.FK_per_RoleRight_per_Role">
+      <End Role="per_Role" EntitySet="per_Role" />
+      <End Role="per_RoleRight" EntitySet="per_RoleRight" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

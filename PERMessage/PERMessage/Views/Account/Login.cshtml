@@ -1,0 +1,75 @@
+﻿@model PERMessage.Models.LoginModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+    <title>
+        系统登录
+    </title>
+
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.9.2.custom.min.js"></script>
+    <link href="~/Content/jquery-ui-1.9.2.custom.css" rel="stylesheet" />
+    <script src="~/Scripts/JScript.js"></script>
+    <link href="~/Content/StyleSheet.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(function () {
+            $("#tixing").css("top", $(window).scrollTop());
+        });
+    </script>
+
+    <script type="text/javascript">
+    //创建一个验证的脚本
+    function checkInput() {
+        if ($("#UserName").val() == "") {
+            alert("用户名不能为空");
+            return false;
+        }
+        if ($("#Password").val() == "") {
+            alert("密码不能为空");
+            return false;
+        }
+      
+        return true;
+    }
+    </script>
+
+</head>
+<body style="background-color: #D2E7FD; margin: 0">
+    <form method="post" action="#" id="form1">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTIzODYxMTc4MmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFDEltYWdlQnV0dG9uMZ/pEdBBUUeQsDWHIe1Ynh0pr/IhGGBo4pZZ0sIBNAxF" />
+        </div>
+
+    
+            <table style="height: 320px; width: 515px; top: 50%; left: 50%; margin-top: -157px; margin-left: -254px; position: absolute">
+                <tr>
+                    <td background="@Url.Content("~/Content/img/login.jpg")">
+                        <div style="margin-top: 150px; margin-left: 280px">
+                            @Html.TextBoxFor(m => m.UserName, new { style = "width: 130px; top:22px" })
+                        </div>
+                        <div style="margin-top: 15px; margin-left: 280px">
+                            @Html.PasswordFor(m => m.Password, new { style = "width: 130px; top:22px" })
+                        </div>
+                        <div style="margin-top: 15px; margin-left: 310px">
+                            <input type="image" name="ImageButton1" id="ImageButton1" src="@Url.Content("~/Content/img/dl.jpg")" onclick="return checkInput()" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+    </form>
+
+    @{
+        //输出ViewBag的message属性
+        if (ViewBag.error != null && ViewBag.error)
+        {
+            <script>alert("@ViewBag.message") </script>
+        }
+    }
+
+</body>
+</html>

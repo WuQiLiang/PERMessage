@@ -1,0 +1,58 @@
+﻿html, body { margin: 0; padding: 0; font-size: 85%; }
+
+/*母版页*/
+.vcon { margin: 0; padding: 0; }
+.vtitle { height: 33px; width: 100%; background: url('/img/ll.jpg'); color: white; font-weight: bold; font-size: 14px; line-height: 33px; cursor: pointer; }
+.hid { background: url('/img/l.jpg'); color: #0153A1; }
+.vconlist { width: 200px; color: #6699FF; font-size: 12px; line-height: 33px; list-style-type: none; margin: 0; padding: 0; overflow-y: auto; }
+    .vconlist li { width: 180px; margin-top: 2px; margin-left: auto; margin-right: auto; }
+        .vconlist li a { text-decoration: none; height: 30px; line-height: 30px; margin: 0; padding: 0; display: inline-block; font-size: 12px; color: #0067C3; width: 100%; }
+            .vconlist li a:hover { background-color: #ffc060; color: red; text-decoration: none; }
+.red:link { color: #0067C3; text-decoration: none; }
+.red:visited { color: #0067C3; text-decoration: none; }
+.red:hover { color: red; text-decoration: none; }
+.black:link { color: black; text-decoration: none; }
+.black:visited { color: black; text-decoration: none; }
+.black:hover { color: red; text-decoration: none; }
+.hidbutton { width: 10px; display: block; background: url('/img/3.jpg') no-repeat center; }
+.hidbuttonclick { background: url('/img/4.jpg') no-repeat center; }
+
+/*表格*/
+.table { border: 0; width: 98%; background-color: white; color: White; line-height: 29px; font-size: 12px; border-collapse: collapse; color: black; margin: 0 auto; }
+    .table thead { height: 29px; background: url('/img/tb.jpg'); color: Black; word-break: break-all; font-weight: bold; }
+    .table tfoot tr td { text-align: center; }
+    .table tfoot span span{ font-size:18px; vertical-align: central;}
+.even { background-color: #EBF3F8; }
+.onmouse { background-color: #ffc060; }
+
+/*标签*/
+.qianhead { width: 100%; height: 29px; background: url('/img/ltr.jpg'); }
+    .qianhead .link { height: 25px; width: 125px; background: url('/img/tab2.jpg'); float: left; display: inline; margin-left: 10px; margin-top: 4px; color: Black; text-align: center; font-size: 12px; line-height: 25px; }
+        .qianhead .link a:link { color: White; text-decoration: none; }
+        .qianhead .link a:visited { color: White; text-decoration: none; }
+        .qianhead .link a:hover { color: White; text-decoration: none; }
+    .qianhead .on a:link { color: Black; text-decoration: none; }
+    .qianhead .on a:visited { color: Black; text-decoration: none; }
+    .qianhead .on a:hover { color: Black; text-decoration: none; }
+    .qianhead .on { background: url('/img/tab1.jpg'); }
+
+/*工具条*/
+.toolhead { height: 30px; padding-top: 15px; }
+.toolheadleft { height: 27px; width: 30px; background: url('/img/yuan.jpg'); float: left; display: inline; margin-left: 20px; }
+.toolheadmid { height: 27px; float: left; color: White; font-size: 12px; line-height: 27px; }
+    .toolheadmid ul { float: left; }
+    .toolheadmid #nav { list-style: none; margin: 0px; height: 27px; padding: 0; }
+        .toolheadmid #nav li { height: 27px; float: left; padding-left: 10px; padding-right: 20px; display: inline; background: url('/img/y1.jpg'); }
+    .toolheadmid ul .wh:link { color: White; text-decoration: none; }
+    .toolheadmid ul .wh:visited { color: White; text-decoration: none; }
+    .toolheadmid ul .wh:hover { color: White; text-decoration: none; }
+.toolheadright { height: 27px; width: 8px; background: url('/img/r.jpg'); float: left; }
+.toolright { float: right; margin-right: 5%; }
+
+/*tip*/
+.tip { height: 27px; width: 98%; background-color: #79A5D0; color: White; font-weight: bold; line-height: 27px; font-size: 12px; text-indent: 2em; margin: 0 auto; margin-top: 30px; background: url('/img/cd.jpg'); }
+
+/*select 渲染*/
+.ui-combobox { position: relative; display: inline-block; }
+.ui-combobox-toggle { position: absolute; top: 0; bottom: 0; margin-left: -1px; padding: 0; /* adjust styles for IE 6/7 */ *height: 1.7em; *top: 0.1em; }
+.ui-combobox-input { margin: 0; padding: 0.2em; }
